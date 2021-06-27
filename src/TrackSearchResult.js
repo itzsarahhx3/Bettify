@@ -4,7 +4,7 @@ export default function TrackSearchResult({ track, chooseTrack }) {
     const handlePlay = () => {
         chooseTrack(track);
     };
-    
+
     return (
         <div
             className="d-flex m-2 align-items-center"
@@ -18,7 +18,7 @@ export default function TrackSearchResult({ track, chooseTrack }) {
             />
             <div className="ml-3">
                 <div>{track.title}</div>
-                <div className="text-muted">{track.artist}</div>
+                <div className="text-muted pull-left">{track.artist}</div>
             </div>
         </div>
     );

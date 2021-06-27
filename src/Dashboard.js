@@ -10,7 +10,7 @@ import Player from "./Player";
 const spotifyApi = new SpotifyWebApi({
     clientId: "c45b9d152506477485a5f64fa7b244ce"
 });
- 
+
 export default function Dashboard({ code }) {
     const accessToken = useAuth(code);
     const [search, setSearch] = useState("");
@@ -105,7 +105,7 @@ export default function Dashboard({ code }) {
                     </div>
                 )}
             </div>
-            <div>
+            <div className="player">
                 <Player
                     accessToken={accessToken}
                     trackUri={playingTrack?.uri}
