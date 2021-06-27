@@ -16,7 +16,8 @@ export default function useAuth(code) {
                 setAccessToken(res.data.accessToken);
                 setRefreshToken(res.data.refreshToken);
                 setExpiresIn(res.data.expiresIn);
-                // remove token in the search bar
+                // remove token code in the search bar
+                // The code that's returned as a query parameter to the redirect URI
                 window.history.pushState({}, null, "/");
             })
             .catch(() => {

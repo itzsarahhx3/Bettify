@@ -85,6 +85,7 @@ export default function Dashboard({ code }) {
             className="d-flex flex-column py-2"
             style={{ height: "100vh" }}
         >
+            <h3>Bett!fy</h3>
             <Form.Control
                 type="search"
                 placeholder="Search Songs/Artists"
@@ -99,6 +100,7 @@ export default function Dashboard({ code }) {
                         chooseTrack={chooseTrack}
                     />
                 ))}
+                {/* lyrics */}
                 {searchResults.length === 0 && (
                     <div className="text-center" style={{ whiteSpace: "pre" }}>
                         {lyrics}

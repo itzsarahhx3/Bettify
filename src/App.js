@@ -12,9 +12,9 @@ const code = new URLSearchParams(window.location.search).get("code");
 function App() {
     return (
         <div className="App">
-            <div className="app__name">
+            {/* <div className="app__name">
                 <h3>Bett!fy</h3>
-            </div>
+            </div> */}
             {code ? <Dashboard code={code} /> : <LoginAuth />}
         </div>
     );

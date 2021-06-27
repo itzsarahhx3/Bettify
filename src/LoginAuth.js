@@ -11,6 +11,7 @@ export default function LoginAuth() {
             className="d-flex justify-content-center align-items-center"
             style={{ minHeight: "100vh" }}
         >
+            <h3>Bett!fy </h3>
             <a className="btn btn-success btn-lg" href={AUTH_URL}>
                 LOG IN
             </a>
