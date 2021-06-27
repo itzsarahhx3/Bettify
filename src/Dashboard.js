@@ -8,9 +8,9 @@ import TrackSearchResult from "./TrackSearchResult";
 import Player from "./Player";
 
 const spotifyApi = new SpotifyWebApi({
-    clientId: "dc6eaa8e114c43f4a6a151d10db5b340"
+    clientId: "c45b9d152506477485a5f64fa7b244ce"
 });
-
+ 
 export default function Dashboard({ code }) {
     const accessToken = useAuth(code);
     const [search, setSearch] = useState("");
